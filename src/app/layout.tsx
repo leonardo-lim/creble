@@ -10,7 +10,7 @@ const metadata: Metadata = {
 };
 
 interface RootLayoutProps {
-    children: React.ReactNode
+    children: React.ReactNode;
 }
 
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
