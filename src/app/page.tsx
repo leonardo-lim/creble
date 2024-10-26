@@ -1,7 +1,10 @@
-import type { NextPage } from 'next';
+'use client';
 
-const Home: NextPage = () => {
-    return <h1>Creble</h1>;
+import type { NextPage } from 'next';
+import Home from '@/components/Home/Home';
+
+const HomePage: NextPage = () => {
+    return <Home />;
 };
 
-export default Home;
+export default HomePage;
