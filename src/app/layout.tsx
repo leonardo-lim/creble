@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Plus_Jakarta_Sans } from 'next/font/google';
+import Navbar from '@/components/Layout/Navbar';
 
 const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
@@ -16,7 +17,10 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
     return (
         <html lang="en">
-            <body className={plusJakartaSans.className}>{children}</body>
+            <body className={plusJakartaSans.className}>
+                <Navbar />
+                {children}
+            </body>
         </html>
     );
 };
