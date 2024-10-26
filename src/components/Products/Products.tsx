@@ -49,11 +49,15 @@ const Products: React.FC = () => {
             </div>
             <h1 className="section-title">Our Products</h1>
             <div className="products-container">
-                {filteredProducts.map((product, idx) => {
-                    return (
-                        <Product key={idx} product={product} />
-                    );
-                })}
+                {products.length === 0 ? (
+                    <p className="loading">Getting products...</p>
+                ) : (
+                    filteredProducts.map((product, idx) => {
+                        return (
+                            <Product key={idx} product={product} />
+                        );
+                    })
+                )}
             </div>
         </div>
     );
