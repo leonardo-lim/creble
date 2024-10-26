@@ -1,0 +1,97 @@
+.product-details {
+    height: 100vh;
+    margin: 0 40px;
+    padding: 120px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+@media (min-width: 1033px) {
+    .product-details {
+        padding: 0;
+    }
+}
+
+.product-details .poster {
+    display: flex;
+    justify-content: end;
+}
+
+.product-details .poster img {
+    width: 320px;
+}
+
+@media (min-width: 480px) {
+    .products-details .poster img {
+        width: 400px;
+    }
+}
+
+.product-details .info {
+    max-width: 600px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product-details .info .title,
+.product-details .info .desc {
+    color: var(--color-primary-dark);
+}
+
+.product-details .info hr {
+    color: var(--color-primary-dark);
+    opacity: 0.15;
+}
+
+.product-details .info .attribute .price-box,
+.product-details .info .attribute .rating-box,
+.product-details .info .attribute .stock-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-details .info .attribute .price-box .price,
+.product-details .info .attribute .rating-box .rating,
+.product-details .info .attribute .stock-box .stock {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.product-details .info .attribute .price-box .price .price-icon,
+.product-details .info .attribute .rating-box .rating .rating-icon,
+.product-details .info .attribute .stock-box .stock .stock-icon {
+    margin-top: 4px;
+    color: var(--color-primary-dark);
+}
+
+.product-details .info .attribute .price-box .price-text,
+.product-details .info .attribute .rating-box .rating-text,
+.product-details .info .attribute .stock-box .stock-text {
+    color: var(--color-primary-dark);
+    font-weight: bold;
+}
+
+.product-details .button-container .back-button {
+    width: 100px;
+    height: 48px;
+    margin-top: 12px;
+    background-color: var(--color-primary-dark);
+    color: var(--color-primary-light);
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.product-details .button-container .back-button:hover {
+    background-color: #000;
+}
