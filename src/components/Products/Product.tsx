@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { FaDollarSign, FaStar } from 'react-icons/fa';
 import './Product.css';
 
@@ -50,7 +51,9 @@ const Product: React.FC<ProductProps> = ({ product }) => {
                     </div>
                 </div>
                 <div className="button-container">
-                    <button type="button" className="detail-button">See Details</button>
+                    <Link href={`products/${product.id}`}>
+                        <button type="button" className="detail-button">See Details</button>
+                    </Link>
                 </div>
             </div>
         </div>
