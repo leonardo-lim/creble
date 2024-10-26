@@ -1,0 +1,75 @@
+.card {
+    height: 640px;
+    padding: 24px;
+    background-color: #FFF;
+    display: flex;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+}
+
+.card .card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-body .poster img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+}
+
+.card .card-body .title-box .title {
+    margin: 16px 0;
+    color: var(--color-primary-dark);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card .card-body hr {
+    color: var(--color-primary-dark);
+    opacity: 0.15;
+}
+
+.card .card-body .info {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .card-body .info .price,
+.card .card-body .info .rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.card .card-body .info .price .price-icon,
+.card .card-body .info .rating .rating-icon {
+    margin-top: 4px;
+    color: var(--color-primary-dark);
+}
+
+.card .card-body .button-container {
+    margin-top: auto;
+}
+
+.card .card-body .button-container .detail-button {
+    width: 100%;
+    height: 48px;
+    margin-top: 12px;
+    background-color: var(--color-primary-dark);
+    color: var(--color-primary-light);
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.card .card-body .button-container .detail-button:hover {
+    background-color: #000;
+}
