@@ -1,22 +1,12 @@
 'use client';
 
+import type { ProductType } from '@/types/product-type';
 import Link from 'next/link';
 import { FaDollarSign, FaStar } from 'react-icons/fa';
 import './Product.css';
 
 interface ProductProps {
-    product: {
-        id: string;
-        title: string;
-        price: number;
-        description: string;
-        category: string;
-        image: string;
-        rating: {
-            rate: number;
-            count: number;
-        };
-    };
+    product: ProductType;
 }
 
 const Product: React.FC<ProductProps> = ({ product }) => {
